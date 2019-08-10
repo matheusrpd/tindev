@@ -9,7 +9,7 @@ import dislike from '../assets/dislike.png';
 import api from '../services/api';
 
 export default function Main({ navigation }) {
-    const id = navigation.params('user');
+    const id = navigation.getParam('user');
     
     const [users, setUsers] = useState([]);  
     
